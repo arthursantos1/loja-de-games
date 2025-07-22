@@ -1,0 +1,66 @@
+body{
+    font-family: "roboto", sans-serif;
+}
+
+.navbar{
+    background-color: #1e43e6;
+}
+
+#cabecalho .nav .nav-link{
+    color: #fff;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: #0e236e;
+}
+
+.carousel-item img{
+    height: 650px;
+}
+
+.font-title{
+    font-family: "Bitcount Prop Double", system-ui;
+}
+
+#sobre-a-loja{
+    background-color: #cee3ff;
+}
+
+.about-itens{
+    padding-left: 0;
+}
+
+.about-itens li{
+    list-style: none;
+}
+
+#produtos{
+    background-color: #475fca;
+}
+
+#produtos .nav .nav-link.active{
+    background-color: #0e236e;
+    color: #fff;
+}
+
+#produtos .nav .nav-link{
+    color: #fff;
+}
+
+#contato {
+    background-color: #cee3ff;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+footer{
+    background-color: #1e43e6;
+    color: #fff;
+}

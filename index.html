@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Bits Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 fs-4 font-title">8 Bits Store</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door-fill"></i>
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-cart4"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-telephone-inbound-fill"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre-a-loja">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./imagens/slide/fachada-loja.jpg" class="d-block w-100" alt="Fachada da Loja">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./imagens/slide/xbox.jpg" class="d-block w-100" alt="Xbox com controles">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./imagens/slide/video-game.jpg" class="d-block w-100" alt="Garoto jogando">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./imagens/video-games.jpg" alt="Controle de video game" class="d-block w-100 rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="font-title fw-bold text-center">Sobre a loja</h2>
+                        <p>Na nossa loja, o passado e o futuro se encontram no mesmo controle. Nascemos da paixão pelos clássicos, aqueles jogos de 8 e 16 bits que marcaram gerações e evoluímos com os olhos voltados para o que há de mais novo no universo gamer. Somos mais que uma loja de videogame. Somos um ponto de encontro entre nostalgia dos consoles antigos e as inovações das novas gerações. Valorizamos cada cartucho, cada pixel, cada loading, e por isso oferecemos produtos que vão do retrô ao mais atual, com curadoria feita por quem realmente vive o mundo dos games.</p>
+                        <h3 class="font-title fw-bold">O que você encontra em nossa loja</h3>
+                        <ul class="about-itens">
+                            <li>
+                                <i class="bi bi-arrow-right"></i>
+                                Consoles
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-right"></i>
+                                Jogos
+                            </li>
+                            <li>
+                                <i class="bi bi-arrow-right"></i>
+                                Acessórios
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container pt-5 pb-5">
+                <div class="row pt-5 pb-5">
+                    <h2 class="font-title text-center">Nossos produtos</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#consoles" class="nav-link active">
+                                <i class="bi bi-controller"></i>
+                                Consoles
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos" class="nav-link">
+                                <i class="bi bi-xbox"></i>
+                                Jogos
+                            </button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="nav-link">
+                                <i class="bi bi-joystick"></i>
+                                Acessórios
+                            </button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="consoles">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/gameboy.jpg" alt="Nintendo Gameboy" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Nintendo Gameboy</h5>
+                                        <p>CPU de 4MHz, tela de LCD monocromática, alto-falante interno e uso de pilhas AA com até 20h de autonomia</p>
+                                        <p class="fw-bold">Preço: R$300,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/nintendo-3ds.jpg" alt="Nintendo 3DS" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Nintendo Gameboy</h5>
+                                        <p>CPU dual-core 268MHz, GPU DMP PICA200, 128MB de memória RAM e slot para cartão SD</p>
+                                        <p class="fw-bold">Preço: R$800,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/nintendo-switch.jpg" alt="nintendo switch" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Nintedo Switch</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo nam cupiditate labore aut obcaecati</p>
+                                        <p class="fw-bold">Preço: R$:2.000,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/playstation-2.jpg" alt="playstation-2" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Playstation 2</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo nam cupiditate labore aut obcaecati
+                                        </p>
+                                        <p class="fw-bold">Preço: R$850,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/playstation-3.jpg" alt="playstation-3" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Playstation 3</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo nam cupiditate labore aut obcaecati
+                                        </p>
+                                        <p class="fw-bold">Preço: R$900,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/playstation-4.jpg" alt="playstation 4" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Playstation 4</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo nam cupiditate labore aut obcaecati
+                                        </p>
+                                        <p class="fw-bold">Preço: R$1.300,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/xbox.jpg" alt="Xbox" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Xbox</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo nam cupiditate labore aut obcaecati
+                                        </p>
+                                        <p class="fw-bold">Preço: R$800,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/consoles/xbox-360.jpg" alt="Xbox 360" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Xbox 360</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, explicabo nam cupiditate labore aut obcaecati
+                                        </p>
+                                        <p class="fw-bold">Preço: R$850,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="jogos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/jogos/Grand-Theft-Auto.png" alt="GTA-V" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Grand-Theft-Auto</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores nihil quas maxime repellendus inventore quod fugit</p>
+                                        <p class="fw-bold">Preço: R$150,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/jogos/kingdom-hearts.jpg" alt="kingdom-hearts" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Kingdom Hearts</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores nihil quas maxime repellendus inventore
+                                            quod fugit</p>
+                                        <p class="fw-bold">Preço: R$100,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/jogos/gears.jpg" alt="Gears" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Gears V</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores nihil quas maxime repellendus inventore
+                                            quod fugit</p>
+                                        <p class="fw-bold">Preço: R$180,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/jogos/doom.jpg" alt="Doom" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">DOOM</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores nihil quas maxime repellendus inventore
+                                            quod fugit</p>
+                                        <p class="fw-bold">Preço: R$120,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/jogos/demon-souls.jpg" alt="Demon Souls" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Demon's Souls</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, maiores nihil quas maxime repellendus inventore
+                                            quod fugit</p>
+                                        <p class="fw-bold">Preço: R$150,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/acessorios/controle-xbox.jpg" alt="Controle xbox" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Controle xbox</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nemo cupiditate, provident eos</p>
+                                        <p class="fw-bold">Preço: R$450,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/acessorios/controle-xbox.jpg" alt="Controle xbox" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Controle xbox</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nemo cupiditate, provident eos</p>
+                                        <p class="fw-bold">Preço: R$450,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/acessorios/game-boy-acessorio.jpg" alt="Gamerobo" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Acessório para o Gameboy</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nemo cupiditate, provident eos</p>
+                                        <p class="fw-bold">Preço: R$450,00</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./imagens/produtos/acessorios/game-boy-acessorio.jpg" alt="Gamerobo" class="d-block w-100 rounded">
+                                        <h5 class="font-title fw-bold mt-2">Acessório para o Gameboy</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nemo cupiditate, provident eos</p>
+                                        <p class="fw-bold">Preço: R$450,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="font-title text-center">Fale <span>conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-3">
+                                <label id="nome" class="form-label fw-bold text-colared">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label id="email" class="form-label fw-bold text-colared">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label id="telefone" class="form-label fw-bold text-colared">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label id="mensagem" class="form-label fw-bold text-colared">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 mt-3">
+                        <div class="row">
+                            <h3 class="font-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes social
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="font-title fs-4">
+                                <i class="bi bi-send-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Teste Exemplo nº 145, Bairro Boostrap - São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="text-center pt-3 pb-1">
+        <div class="container">
+            <p>&copy; Todos os direitos reservados - 2025</p>
+            <p>Exercicio do curso da EBAC - modulo 13</p>
+            <p>Desenvolvido por Arthur Santos</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
